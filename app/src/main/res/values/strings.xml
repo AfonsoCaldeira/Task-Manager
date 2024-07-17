@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Task Assignment</string>
+    <string-array name="category">
+        <item>Home</item>
+        <item>Shoplist</item>
+        <item>Stuff</item>
+    </string-array>
+    <string-array name="pr">
+        <item>Low</item>
+        <item>Medium</item>
+        <item>High</item>
+    </string-array>
+
+
+</resources>

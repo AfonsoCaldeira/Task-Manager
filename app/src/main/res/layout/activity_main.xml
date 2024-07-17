@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+   >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        >
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            app:title="Add Task"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#3F51B5"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    <TextView
+        android:textColor="#000"
+        android:layout_marginTop="10dp"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Title"
+        android:padding="10dp"/>
+
+    <EditText
+        android:background="@drawable/stroke"
+        android:textColor="#A39C9C"
+
+        android:textColorHint="#A39C9C"
+        android:padding="10dp"
+
+
+        android:id="@+id/editTextTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter title"/>
+
+    <EditText
+        android:layout_marginTop="10dp"
+        android:textColor="#A39C9C"
+
+        android:background="@drawable/stroke"
+
+        android:textColorHint="#A39C9C"
+        android:padding="10dp"
+
+        android:id="@+id/editTextUUID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="UUID"/>
+    <TextView
+        android:textColor="#000"
+        android:layout_marginTop="10dp"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Description"
+        android:padding="10dp"/>
+
+
+    <EditText
+        android:background="@drawable/stroke"
+        android:textColor="#A39C9C"
+
+        android:layout_marginTop="10dp"
+
+        android:textColorHint="#A39C9C"
+        android:padding="10dp"
+
+        android:id="@+id/editTextDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Description"
+        android:inputType="textMultiLine"
+        android:minLines="3"/>
+
+    <TextView
+        android:textColor="#000"
+        android:layout_marginTop="10dp"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Current date"
+        android:padding="10dp"/>
+
+    <EditText
+        android:background="@drawable/stroke"
+        android:layout_marginTop="10dp"
+
+        android:textColorHint="#A39C9C"
+        android:textColor="#A39C9C"
+        android:padding="10dp"
+
+        android:id="@+id/editTextCreationDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Creation Date"
+        android:inputType="none"
+        android:focusable="false"/> <!-- Non-editable -->
+    <TextView
+        android:textColor="#000"
+        android:layout_marginTop="10dp"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Due date"
+        android:padding="10dp"/>
+
+    <EditText
+        android:id="@+id/editTextDueDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/stroke"
+        android:layout_marginTop="10dp"
+        android:textColor="#A39C9C"
+
+        android:textColorHint="#A39C9C"
+        android:padding="10dp"
+
+        android:hint="Due Date"
+        android:inputType="none"
+        android:focusable="false"/> <!-- Non-editable -->
+
+    <TextView
+        android:textColor="#000"
+        android:layout_marginTop="10dp"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Priority"
+        android:padding="10dp"/>
+    <Spinner
+        android:id="@+id/editTextPriority"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+
+
+        android:entries="@array/pr"
+        android:hint="Priority"
+        android:padding="10dp"
+        android:textColor="#A39C9C"
+        android:textColorHint="#A39C9C"
+        android:theme="@style/SpinnerTheme" />
+
+    <TextView
+        android:textColor="#000"
+        android:layout_marginTop="10dp"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Category"
+        android:padding="10dp"/>
+    <EditText
+        android:entries="@array/category"
+        android:textColorHint="#A39C9C"
+        android:padding="10dp"
+        android:background="@drawable/stroke"
+        android:layout_marginTop="10dp"
+        android:id="@+id/editTextCategory"
+        android:textColor="#A39C9C"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Category"/>
+
+    <EditText
+        android:background="@drawable/stroke"
+        android:layout_marginTop="10dp"
+
+        android:textColorHint="#A39C9C"
+        android:padding="10dp"
+        android:textColor="#A39C9C"
+
+        android:id="@+id/editTextTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Time"/>
+
+    <CheckBox
+        android:id="@+id/checkBoxCompleted"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Completed"/>
+
+    <Button
+        android:background="@drawable/bt_uisquare"
+
+        android:id="@+id/buttonInsert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Insert Task"/>
+    </LinearLayout>
+</ScrollView>

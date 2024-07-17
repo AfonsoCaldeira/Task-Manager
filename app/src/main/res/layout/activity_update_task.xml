@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    android:textColorHint="#000"
+
+    android:padding="16dp">
+    <TextView
+        android:textColor="#000"
+        android:layout_marginTop="10dp"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Title"
+        android:padding="10dp"/>
+    <EditText
+        android:textColorHint="#000"
+        android:background="@drawable/stroke"
+
+        android:id="@+id/editTextEmail"
+        android:textColor="@color/black"
+        android:padding="10dp"
+        android:textSize="18sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Title" />
+    <TextView
+        android:textColor="#000"
+        android:layout_marginTop="10dp"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Description"
+        android:padding="10dp"/>
+    <EditText
+        android:layout_marginTop="10dp"
+        android:background="@drawable/stroke"
+
+        android:textColorHint="#000"
+
+        android:textColor="@color/black"
+        android:padding="10dp"
+        android:textSize="18sp"
+
+        android:id="@+id/descriptionEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Description" />
+    <TextView
+        android:textColor="#000"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Due date"
+        android:padding="10dp"/>
+    <EditText
+        android:id="@+id/dueDateEditText"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/stroke"
+
+        android:textColorHint="#000"
+        android:textColor="@color/black"
+        android:padding="10dp"
+        android:textSize="18sp"
+        android:layout_height="wrap_content"
+        android:hint="Due Date" />
+
+
+
+
+    <Spinner
+        android:textColorHint="#000"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:textColor="#000"
+
+        android:theme="@style/SpinnerTheme"
+        android:entries="@array/pr"
+        android:id="@+id/editTextPriority"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Priority"/>
+    <EditText
+        android:textColorHint="#000"
+        android:background="@drawable/stroke"
+        android:entries="@array/category"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/editTextCategory"
+        android:textColor="#000"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Category"/>
+
+    <Button
+        android:layout_marginTop="10dp"
+
+        android:background="@drawable/bt_uisquare"
+        android:id="@+id/saveButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save" />
+</LinearLayout>
